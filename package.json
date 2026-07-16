@@ -1,7 +1,7 @@
 {
   "name": "@classbridge/vue",
   "version": "0.1.0",
-  "description": "ClassBridge Learning Stage UI — Vue 3 component library",
+  "description": "ClassBridge Learning Stage UI \u2014 Vue 3 component library",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -30,8 +30,8 @@
     "vue": "^3.4.0"
   },
   "dependencies": {
-    "@classbridge/sdk": "file:../classbridge-sdk",
-    "@classbridge/whiteboard": "file:../classbridge-whiteboard"
+    "@classbridge/sdk": "^0.1.0",
+    "@classbridge/whiteboard": "^0.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
@@ -48,5 +48,12 @@
     "edtech"
   ],
   "author": "Mohamed Hekal",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohamedhekal/classbridge-vue.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

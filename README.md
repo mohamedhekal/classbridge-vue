@@ -89,3 +89,14 @@ Learning Stage UI for live teaching, engagement, and collaboration.
   <img src="../classbridge/docs/assets/marketing/student-engagement.png" width="49%" alt="ClassBridge student engagement tools">
   <img src="../classbridge/docs/assets/marketing/teaching-whiteboard.png" width="49%" alt="ClassBridge teaching whiteboard">
 </p>
+
+## Monorepo development
+
+When working inside the ClassBridge monorepo, point dependencies at sibling packages instead of the registry:
+
+```json
+"@classbridge/sdk": "file:../classbridge-sdk",
+"@classbridge/whiteboard": "file:../classbridge-whiteboard"
+```
+
+Published releases on npm use `^0.1.0` semver ranges.
